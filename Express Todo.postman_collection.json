@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "c6080f12-ea61-4105-8349-aa362f6c4b4d",
+		"name": "Express Todo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "讀取",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://agile-plains-57003.herokuapp.com/api/posts",
+					"protocol": "https",
+					"host": [
+						"agile-plains-57003",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"name\": \"測試002\",\r\n            \"tags\": [],\r\n            \"type\": \"group\",\r\n            \"image\": \"test02\",\r\n            \"content\": \"123\",\r\n            \"likes\": 0,\r\n            \"comments\": 0\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://agile-plains-57003.herokuapp.com/api/posts",
+					"protocol": "https",
+					"host": [
+						"agile-plains-57003",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "修改",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"測試009\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://agile-plains-57003.herokuapp.com/api/posts/62716539bb1f51f36810db7a",
+					"protocol": "https",
+					"host": [
+						"agile-plains-57003",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"posts",
+						"62716539bb1f51f36810db7a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除全部",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://agile-plains-57003.herokuapp.com/api/posts",
+					"protocol": "https",
+					"host": [
+						"agile-plains-57003",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://agile-plains-57003.herokuapp.com/api/posts/627164c9bb1f51f36810db71",
+					"protocol": "https",
+					"host": [
+						"agile-plains-57003",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"posts",
+						"627164c9bb1f51f36810db71"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
